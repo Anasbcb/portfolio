@@ -39,6 +39,7 @@
                 <li><a href="#about" class="nav-link" id="nl-about">About</a></li>
                 <li><a href="#skills" class="nav-link" id="nl-skills">Skills</a></li>
                 <li><a href="#projects" class="nav-link" id="nl-projects">Projects</a></li>
+                <li><a href="#education" class="nav-link" id="nl-education">Education</a></li>
                 <li><a href="#contact" class="nav-link" id="nl-contact">Contact</a></li>
             </ul>
             <a href="#contact" class="nav-cta" id="nav-cta-btn">Hire Me</a>
@@ -55,6 +56,7 @@
             <li><a href="#about" class="mobile-link" id="ml-about">About</a></li>
             <li><a href="#skills" class="mobile-link" id="ml-skills">Skills</a></li>
             <li><a href="#projects" class="mobile-link" id="ml-projects">Projects</a></li>
+            <li><a href="#education" class="mobile-link" id="ml-education">Education</a></li>
             <li><a href="#contact" class="mobile-link" id="ml-contact">Contact</a></li>
         </ul>
     </div>
@@ -94,12 +96,12 @@
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-num" data-target="9">0</span>
                     <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-num" data-target="5">0</span>
                     <span class="stat-label">Domains</span>
                 </div>
                 <div class="stat-divider"></div>
@@ -215,10 +217,13 @@
                         <div class="terminal-line t-out">&nbsp;&nbsp;"status": "open_to_work",</div>
                         <div class="terminal-line t-out">&nbsp;&nbsp;"coffee": true</div>
                         <div class="terminal-line t-out">}</div>
-                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">ls
-                                projects/</span></div>
-                        <div class="terminal-line t-out t-green">tarfih/ leadify/ pharmacy/ humacare/ iot-blockchain/
-                            optician/</div>
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">ls projects/</span></div>
+                        <div class="terminal-line t-out t-green">tarfih/ leadify/ pharmacy/ humacare/ iot-blockchain/ optician/ cctv-systems/ net-security/ smart-alarm/</div>
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat education.txt</span></div>
+                        <div class="terminal-line t-out">🎓 Master: Networks &amp; Cybersecurity</div>
+                        <div class="terminal-line t-out">🎓 Licence: Computer Science (IS)</div>
+                        <div class="terminal-line t-out">📜 CCNA — ICT Towers Academy</div>
+                        <div class="terminal-line t-out">📜 CCTV Installation &amp; Security Diploma</div>
                         <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
                     </div>
                 </div>
@@ -343,14 +348,32 @@
                             <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
                         </svg>
                     </div>
-                    <h3>Databases & Tools</h3>
+                    <h3>Databases &amp; Tools</h3>
                     <div class="skill-tags">
                         <span class="tag">MongoDB</span>
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">Firebase</span>
                         <span class="tag">Git</span>
                         <span class="tag">Docker</span>
+                    </div>
+                </div>
 
+                <div class="skill-card" id="skill-physical">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.894L15 14"/>
+                            <rect x="1" y="6" width="14" height="12" rx="2"/>
+                            <circle cx="7.5" cy="12" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Physical Security &amp; Systems</h3>
+                    <div class="skill-tags">
+                        <span class="tag">CCTV</span>
+                        <span class="tag">IP Cameras</span>
+                        <span class="tag">Alarm Systems</span>
+                        <span class="tag">Access Control</span>
+                        <span class="tag">Smart Home</span>
+                        <span class="tag">Home Automation</span>
                     </div>
                 </div>
 
@@ -371,6 +394,7 @@
                 <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
                 <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
                 <button class="filter-btn" data-filter="security" id="filter-security">Security</button>
+                <button class="filter-btn" data-filter="hardware" id="filter-hardware">Hardware &amp; Systems</button>
             </div>
 
             <div class="projects-grid" id="projects-grid">
@@ -632,6 +656,222 @@
                     </div>
                 </article>
 
+                <!-- CCTV Systems -->
+                <article class="project-card" data-category="hardware" id="proj-cctv">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-7">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.894L15 14"/>
+                                    <rect x="1" y="6" width="14" height="12" rx="2"/>
+                                    <circle cx="7.5" cy="12" r="1.5" fill="currentColor"/>
+                                </svg>
+                                <span>CCTV &amp; Surveillance</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">📷 Physical Security</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Hardware</span>
+                            <span class="project-tag">Security</span>
+                            <span class="project-tag">Surveillance</span>
+                        </div>
+                        <h3 class="project-title">CCTV &amp; Surveillance Systems</h3>
+                        <p class="project-desc">
+                            Design, installation and configuration of IP and analog CCTV surveillance systems for homes and businesses. Covers camera placement, NVR/DVR setup, remote monitoring, and integration with access control systems.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">IP Cameras</span>
+                            <span class="stack-item">NVR/DVR</span>
+                            <span class="stack-item">Hikvision</span>
+                            <span class="stack-item">Remote Monitoring</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Network Implementation & Security -->
+                <article class="project-card" data-category="hardware" id="proj-netimpl">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-8">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="2" width="6" height="6" rx="1"/>
+                                    <rect x="16" y="2" width="6" height="6" rx="1"/>
+                                    <rect x="9" y="16" width="6" height="6" rx="1"/>
+                                    <path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/>
+                                    <path d="M12 12v4"/>
+                                </svg>
+                                <span>Network Engineering</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">🔌 Infrastructure</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Networking</span>
+                            <span class="project-tag">Security</span>
+                            <span class="project-tag">Infrastructure</span>
+                        </div>
+                        <h3 class="project-title">Network Implementation &amp; Security</h3>
+                        <p class="project-desc">
+                            End-to-end network design and deployment including structured cabling, switch/router configuration (Cisco), VLAN segmentation, firewall rules, VPN setup, and ongoing network security monitoring for SMB environments.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">Cisco</span>
+                            <span class="stack-item">VLAN</span>
+                            <span class="stack-item">Firewall</span>
+                            <span class="stack-item">VPN</span>
+                            <span class="stack-item">Wireshark</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Alarm & Smart Home -->
+                <article class="project-card" data-category="hardware" id="proj-alarm">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-9">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9 22 9 12 15 12 15 22"/>
+                                </svg>
+                                <span>Smart Home &amp; Alarm</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">🏠 Smart Home</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">Hardware</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <h3 class="project-title">Alarm Systems &amp; IoT Smart Homes</h3>
+                        <p class="project-desc">
+                            Installation and programming of intrusion alarm systems combined with IoT smart home automation. Integrates motion sensors, door/window contacts, smart lighting, and remote control via mobile apps — all secured with encrypted communication.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">IoT Sensors</span>
+                            <span class="stack-item">GSM Alarm</span>
+                            <span class="stack-item">Home Automation</span>
+                            <span class="stack-item">MQTT</span>
+                            <span class="stack-item">Mobile Control</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label mono">// 04. education &amp; certifications</span>
+                <h2 class="section-title">Academic &amp; Professional Training</h2>
+            </div>
+            <div class="education-layout">
+
+                <!-- Academic Degrees -->
+                <div class="edu-column">
+                    <h3 class="edu-col-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        Academic Degrees
+                    </h3>
+                    <div class="edu-timeline">
+
+                        <div class="edu-card" id="edu-master">
+                            <div class="edu-card-top">
+                                <div class="edu-icon edu-icon-master">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                </div>
+                                <div class="edu-badge-year">Master</div>
+                            </div>
+                            <h4 class="edu-title">Master's Degree — Networks &amp; Cybersecurity</h4>
+                            <p class="edu-institution">University — Algeria</p>
+                            <p class="edu-desc">Advanced studies in network architecture, cybersecurity protocols, penetration testing, cryptography, and secure system design. Graduation project: IoT security using Ethereum blockchain.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag">Cybersecurity</span>
+                                <span class="edu-tag">Networks</span>
+                                <span class="edu-tag">Blockchain</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card" id="edu-licence">
+                            <div class="edu-card-top">
+                                <div class="edu-icon edu-icon-licence">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                </div>
+                                <div class="edu-badge-year">Licence</div>
+                            </div>
+                            <h4 class="edu-title">Bachelor's Degree — Computer Science (Information Systems)</h4>
+                            <p class="edu-institution">University — Algeria</p>
+                            <p class="edu-desc">Foundations in software engineering, databases, information systems design, algorithms, web technologies, and operating systems.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag">Computer Science</span>
+                                <span class="edu-tag">Info Systems</span>
+                                <span class="edu-tag">Software Eng.</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Certifications & Training -->
+                <div class="edu-column">
+                    <h3 class="edu-col-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        Certifications &amp; Training
+                    </h3>
+                    <div class="certs-grid">
+
+                        <div class="cert-card" id="cert-ccna">
+                            <div class="cert-icon cert-cisco">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/><path d="M12 12v4"/></svg>
+                            </div>
+                            <div class="cert-body">
+                                <h4>CCNA — Cisco Certified Network Associate</h4>
+                                <p class="cert-issuer">ICT Towers Academy</p>
+                                <p class="cert-desc">Routing &amp; switching, network fundamentals, IP addressing, VLANs, WAN technologies, and network security essentials.</p>
+                            </div>
+                            <div class="cert-verified">✓ Certified</div>
+                        </div>
+
+                        <div class="cert-card" id="cert-cctv">
+                            <div class="cert-icon cert-cctv-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.894L15 14"/><rect x="1" y="6" width="14" height="12" rx="2"/><circle cx="7.5" cy="12" r="1.5" fill="currentColor"/></svg>
+                            </div>
+                            <div class="cert-body">
+                                <h4>CCTV Installation &amp; Security Systems</h4>
+                                <p class="cert-issuer">Professional Certification</p>
+                                <p class="cert-desc">Camera technologies, DVR/NVR configuration, cable routing, system testing, and surveillance best practices.</p>
+                            </div>
+                            <div class="cert-verified">✓ Diploma</div>
+                        </div>
+
+                        <div class="cert-card" id="cert-extra">
+                            <div class="cert-icon cert-extra-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            </div>
+                            <div class="cert-body">
+                                <h4>Additional Professional Diplomas</h4>
+                                <p class="cert-issuer">Various Institutions</p>
+                                <p class="cert-desc">Ongoing learning across cybersecurity, networking, IoT, and smart systems — continuously expanding expertise through professional training programs.</p>
+                            </div>
+                            <div class="cert-verified">✓ Diplomas</div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -640,7 +880,7 @@
     <section class="section contact-section" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label mono">// 04. contact</span>
+                <span class="section-label mono">// 05. contact</span>
                 <h2 class="section-title">Let's Connect</h2>
             </div>
             <div class="contact-grid">
@@ -664,16 +904,15 @@
                                 <span class="ci-value">anes.bouchareb@gmail.com</span>
                             </div>
                         </a>
-                        <a class="contact-item" href="https://github.com/" target="_blank" id="github-link">
+                        <a class="contact-item" href="https://github.com/Anasbcb" target="_blank" id="github-link">
                             <div class="ci-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
                             </div>
                             <div class="ci-text">
                                 <span class="ci-label">GitHub</span>
-                                <span class="ci-value">www.linkedin.com/in/anas-bouchareb-638509214</span>
+                                <span class="ci-value">github.com/Anasbcb</span>
                             </div>
                         </a>
                         <a class="contact-item" href="https://www.linkedin.com/in/anas-bouchareb-638509214/"

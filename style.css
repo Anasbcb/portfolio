@@ -531,6 +531,9 @@ a { text-decoration: none; color: inherit; }
 .pi-4 { background: linear-gradient(135deg, #2d0d15 0%, #1a0d2d 100%); }
 .pi-5 { background: linear-gradient(135deg, #0d1a2d 0%, #0d2d1a 100%); }
 .pi-6 { background: linear-gradient(135deg, #2a1a0d 0%, #0d1a25 100%); }
+.pi-7 { background: linear-gradient(135deg, #1a0d0d 0%, #2d1a0a 100%); }
+.pi-8 { background: linear-gradient(135deg, #0a1a2d 0%, #0d2240 100%); }
+.pi-9 { background: linear-gradient(135deg, #0d2d25 0%, #1a2d0d 100%); }
 .pi-content {
     display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
     color: rgba(255,255,255,0.25);
@@ -643,6 +646,145 @@ a { text-decoration: none; color: inherit; }
     color: var(--accent); font-size: 0.9rem;
 }
 .form-success.show { display: block; }
+
+/* ============================================
+   EDUCATION
+   ============================================ */
+.education-section { background: var(--bg); }
+.education-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+.edu-col-title {
+    display: flex; align-items: center; gap: 0.6rem;
+    font-size: 1rem; font-weight: 700;
+    color: var(--accent); margin-bottom: 1.75rem;
+    text-transform: uppercase; letter-spacing: 1px;
+    font-family: var(--ff-mono);
+}
+.edu-col-title svg { color: var(--accent); flex-shrink: 0; }
+
+/* Degree cards */
+.edu-timeline { display: flex; flex-direction: column; gap: 1.25rem; }
+.edu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    position: relative;
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+.edu-card:hover {
+    border-color: var(--border2);
+    border-left-color: var(--accent);
+    transform: translateX(4px);
+    box-shadow: var(--glow);
+}
+.edu-card-top {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 0.85rem;
+}
+.edu-icon {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+}
+.edu-icon-master {
+    background: rgba(0,255,170,0.1);
+    border: 1px solid rgba(0,255,170,0.2);
+    color: var(--accent);
+}
+.edu-icon-licence {
+    background: rgba(0,212,255,0.1);
+    border: 1px solid rgba(0,212,255,0.2);
+    color: var(--accent2);
+}
+.edu-badge-year {
+    padding: 0.25rem 0.75rem;
+    background: rgba(124,58,237,0.15);
+    border: 1px solid rgba(124,58,237,0.3);
+    border-radius: 100px;
+    font-size: 0.7rem; font-weight: 700;
+    color: #a78bfa; font-family: var(--ff-mono);
+    text-transform: uppercase; letter-spacing: 1px;
+}
+.edu-title {
+    font-size: 0.98rem; font-weight: 700;
+    color: var(--text); margin-bottom: 0.3rem;
+}
+.edu-institution {
+    font-size: 0.78rem; color: var(--accent);
+    font-family: var(--ff-mono); margin-bottom: 0.65rem;
+}
+.edu-desc { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.85rem; }
+.edu-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.edu-tag {
+    padding: 0.2rem 0.6rem;
+    background: rgba(0,255,170,0.07);
+    border: 1px solid rgba(0,255,170,0.15);
+    border-radius: 5px;
+    font-size: 0.7rem; color: var(--accent);
+    font-family: var(--ff-mono);
+}
+
+/* Cert cards */
+.certs-grid { display: flex; flex-direction: column; gap: 1.1rem; }
+.cert-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+    display: flex; gap: 1rem; align-items: flex-start;
+    transition: var(--transition);
+    position: relative;
+}
+.cert-card:hover { border-color: var(--border2); background: var(--surface2); box-shadow: var(--glow2); }
+.cert-icon {
+    width: 52px; height: 52px; flex-shrink: 0;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+}
+.cert-cisco {
+    background: rgba(0,150,255,0.1);
+    border: 1px solid rgba(0,150,255,0.2);
+    color: #38bdf8;
+}
+.cert-cctv-icon {
+    background: rgba(255,100,50,0.1);
+    border: 1px solid rgba(255,100,50,0.2);
+    color: #fb923c;
+}
+.cert-extra-icon {
+    background: rgba(168,85,247,0.1);
+    border: 1px solid rgba(168,85,247,0.2);
+    color: #a855f7;
+}
+.cert-body { flex: 1; }
+.cert-body h4 { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 0.25rem; }
+.cert-issuer {
+    font-size: 0.75rem; font-family: var(--ff-mono);
+    color: var(--accent); margin-bottom: 0.5rem;
+}
+.cert-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.65; }
+.cert-verified {
+    flex-shrink: 0;
+    font-size: 0.7rem; font-family: var(--ff-mono);
+    color: var(--accent);
+    background: rgba(0,255,170,0.08);
+    border: 1px solid rgba(0,255,170,0.2);
+    border-radius: 100px;
+    padding: 0.2rem 0.65rem;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin-top: 0.1rem;
+}
+
+@media (max-width: 1024px) {
+    .education-layout { grid-template-columns: 1fr; }
+}
 
 /* ============================================
    FOOTER

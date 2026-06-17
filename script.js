@@ -90,7 +90,7 @@ mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ---- ACTIVE NAV LINK ----
-const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+const sections = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
 function updateActiveNav() {
     const scrollY = window.scrollY + 120;
     sections.forEach(id => {
