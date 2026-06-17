@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Bouchareb | Developer & Cybersecurity Engineer</title>
+    <meta name="description"
+        content="Portfolio of Anas Bouchareb — Full-Stack Web & Mobile Developer, Cybersecurity & Networks Engineer. Building modern apps and securing digital infrastructure.">
+    <meta property="og:title" content="Anas Bouchareb | Developer & Cybersecurity Engineer">
+    <meta property="og:description"
+        content="Full-Stack Developer & Cybersecurity Graduate. Web, Mobile, IoT Security & Blockchain.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Animated Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">AB</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active" id="nl-home">Home</a></li>
+                <li><a href="#about" class="nav-link" id="nl-about">About</a></li>
+                <li><a href="#skills" class="nav-link" id="nl-skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" id="nl-projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" id="nl-contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta" id="nav-cta-btn">Hire Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#home" class="mobile-link" id="ml-home">Home</a></li>
+            <li><a href="#about" class="mobile-link" id="ml-about">About</a></li>
+            <li><a href="#skills" class="mobile-link" id="ml-skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-link" id="ml-projects">Projects</a></li>
+            <li><a href="#contact" class="mobile-link" id="ml-contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for work
+            </div>
+            <div class="hero-greeting">
+                <span class="mono">// Hello, World! I'm</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-name">Anas</span><br>
+                <span class="hero-name accent">Bouchareb</span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-text" id="role-text">Full-Stack Developer</span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-desc">
+                Building cutting-edge web & mobile applications, securing digital infrastructure,
+                and engineering IoT systems with blockchain technology.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" id="view-work-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-ghost" id="contact-btn">
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Domains</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="2">0</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-wrapper">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+                <div class="avatar-img-wrap">
+                    <img src="avatar.png" alt="Anas Bouchareb" class="avatar-img">
+                </div>
+                <!-- Floating tech tags -->
+                <div class="float-tag tag-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    React
+                </div>
+                <div class="float-tag tag-2">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    Security
+                </div>
+                <div class="float-tag tag-3">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="5" y="2" width="14" height="20" rx="2" />
+                        <line x1="12" y1="18" x2="12" y2="18.01" />
+                    </svg>
+                    Mobile
+                </div>
+                <div class="float-tag tag-4">⛓ Blockchain</div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mono">scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label mono">// 01. about</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Anas Bouchareb</strong>, a passionate developer and cybersecurity engineer from
+                        Algeria.
+                        I graduated with expertise in <strong>Networks & Cybersecurity</strong> and have channeled that
+                        knowledge
+                        into building real-world products that solve meaningful problems.
+                    </p>
+                    <p>
+                        From consumer-facing mobile apps and B2B SaaS platforms to
+                        <strong>IoT security systems</strong> powered by Ethereum blockchain and smart contracts —
+                        I work across the full technology stack.
+                    </p>
+                    <p>
+                        I thrive at the intersection of <strong>beautiful UI/UX</strong> and <strong>robust security
+                            architecture</strong>,
+                        building systems that are both elegant and resilient.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="hl-icon">🎓</span>
+                            <div>
+                                <strong>Networks & Cybersecurity Graduate</strong>
+                                <span>University Degree</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="hl-icon">📍</span>
+                            <div>
+                                <strong>Based in Algeria</strong>
+                                <span>Open to Remote Work</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="hl-icon">💼</span>
+                            <div>
+                                <strong>Freelance & Collaborative</strong>
+                                <span>Available for Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal-bar">
+                        <span class="terminal-dot dot-red"></span>
+                        <span class="terminal-dot dot-yellow"></span>
+                        <span class="terminal-dot dot-green"></span>
+                        <span class="terminal-title mono">anas@portfolio ~ $</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span>
+                        </div>
+                        <div class="terminal-line t-out">anas_bouchareb</div>
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat
+                                skills.json</span></div>
+                        <div class="terminal-line t-out">{</div>
+                        <div class="terminal-line t-out">&nbsp;&nbsp;"roles": ["Dev", "Security", "IoT"],</div>
+                        <div class="terminal-line t-out">&nbsp;&nbsp;"stack": ["Web", "Mobile", "Blockchain"],</div>
+                        <div class="terminal-line t-out">&nbsp;&nbsp;"status": "open_to_work",</div>
+                        <div class="terminal-line t-out">&nbsp;&nbsp;"coffee": true</div>
+                        <div class="terminal-line t-out">}</div>
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">ls
+                                projects/</span></div>
+                        <div class="terminal-line t-out t-green">tarfih/ leadify/ pharmacy/ humacare/ iot-blockchain/
+                            optician/</div>
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label mono">// 02. skills</span>
+                <h2 class="section-title">Tech Arsenal</h2>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-card" id="skill-web">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-mobile">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="5" y="2" width="14" height="20" rx="2" />
+                            <line x1="12" y1="18" x2="12" y2="18.01" />
+                        </svg>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-sec">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Network Security</span>
+                        <span class="tag">Penetration Testing</span>
+                        <span class="tag">Firewalls</span>
+                        <span class="tag">Cryptography</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-blockchain">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </div>
+                    <h3>Blockchain & IoT</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Ethereum</span>
+                        <span class="tag">Solidity</span>
+                        <span class="tag">Smart Contracts</span>
+                        <span class="tag">Web3.js</span>
+                        <span class="tag">IoT Protocols</span>
+                        <span class="tag">MQTT</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-net">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="6" height="6" rx="1" />
+                            <rect x="16" y="2" width="6" height="6" rx="1" />
+                            <rect x="9" y="16" width="6" height="6" rx="1" />
+                            <path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8" />
+                            <path d="M12 12v4" />
+                        </svg>
+                    </div>
+                    <h3>Networks</h3>
+                    <div class="skill-tags">
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">VPN</span>
+                        <span class="tag">Routing</span>
+                        <span class="tag">Cisco</span>
+                        <span class="tag">Network Admin</span>
+                        <span class="tag">SDN</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-db">
+                    <div class="skill-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                        </svg>
+                    </div>
+                    <h3>Databases & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label mono">// 03. projects</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+                <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+                <button class="filter-btn" data-filter="security" id="filter-security">Security</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- Tarfih -->
+                <article class="project-card featured" data-category="web" id="proj-tarfih">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-1">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Tourism App</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://tarrfih-essg.netlify.app/" target="_blank" rel="noopener"
+                                class="overlay-btn" id="tarfih-live">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Web App</span>
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">Tourism</span>
+                        </div>
+                        <h3 class="project-title">Tarfih — Tourism & Entertainment</h3>
+                        <p class="project-desc">
+                            A location-based tourism & entertainment platform for Algeria. Features category-based
+                            exploration of beaches, historical sites, hiking trails, and more with AI-powered search and
+                            real-time recommendations.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">HTML/CSS</span>
+                            <span class="stack-item">JavaScript</span>
+                            <span class="stack-item">AI Search</span>
+                            <span class="stack-item">Netlify</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Leadify -->
+                <article class="project-card" data-category="web" id="proj-leadify">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-2">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                <span>B2B CRM</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://leadify-essg-dz.netlify.app/" target="_blank" rel="noopener"
+                                class="overlay-btn" id="leadify-live">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">SaaS</span>
+                            <span class="project-tag">B2B</span>
+                            <span class="project-tag">AI</span>
+                        </div>
+                        <h3 class="project-title">Leadify DZ — B2B Prospecting Platform</h3>
+                        <p class="project-desc">
+                            A digital prospecting & CRM platform tailored for the Algerian market. Enables businesses to
+                            identify prospects, automate outreach, and manage their commercial pipeline with AI
+                            assistance.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">JavaScript</span>
+                            <span class="stack-item">Dashboard UI</span>
+                            <span class="stack-item">AI Assistant</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pharmacy -->
+                <article class="project-card" data-category="web" id="proj-pharmacy">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-3">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                                </svg>
+                                <span>Healthcare</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://pharmacy-portal-nine.vercel.app/" target="_blank" rel="noopener"
+                                class="overlay-btn" id="pharmacy-live">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Web App</span>
+                            <span class="project-tag">Healthcare</span>
+                        </div>
+                        <h3 class="project-title">Pharmacy Portal</h3>
+                        <p class="project-desc">
+                            A comprehensive pharmacy management portal with features for medications lookup, ordonnance
+                            management, medication reminders, appointment booking, delivery tracking, and
+                            patient-pharmacist chat.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">HTML/CSS/JS</span>
+                            <span class="stack-item">Vercel</span>
+                            <span class="stack-item">Healthcare</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Humacare -->
+                <article class="project-card" data-category="mobile" id="proj-humacare">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-4">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                                <span>Health App</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">📱 Mobile App</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Mobile</span>
+                            <span class="project-tag">Healthcare</span>
+                            <span class="project-tag">Flutter</span>
+                        </div>
+                        <h3 class="project-title">Humacare — Health Mobile App</h3>
+                        <p class="project-desc">
+                            A mobile health application focused on human care and wellness. Built with Flutter for
+                            cross-platform compatibility, offering intuitive health tracking and care management
+                            features.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">Flutter</span>
+                            <span class="stack-item">Dart</span>
+                            <span class="stack-item">Mobile</span>
+                            <span class="stack-item">Healthcare</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- IoT Blockchain -->
+                <article class="project-card featured" data-category="security" id="proj-iot">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-5">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                <span>Blockchain Security</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">🔗 Ethereum</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Security</span>
+                            <span class="project-tag">Blockchain</span>
+                            <span class="project-tag">IoT</span>
+                        </div>
+                        <h3 class="project-title">IoT Security via Ethereum Blockchain</h3>
+                        <p class="project-desc">
+                            A research & engineering project implementing ABAC (Attribute-Based Access Control) for IoT
+                            smart home devices using Ethereum smart contracts. Decentralized, tamper-proof access
+                            management for connected devices.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">Solidity</span>
+                            <span class="stack-item">Ethereum</span>
+                            <span class="stack-item">Web3.js</span>
+                            <span class="stack-item">Smart Contracts</span>
+                            <span class="stack-item">ABAC</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Optician Software -->
+                <article class="project-card" data-category="web" id="proj-optician">
+                    <div class="project-img">
+                        <div class="project-img-placeholder pi-6">
+                            <div class="pi-content">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" />
+                                    <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" />
+                                    <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" />
+                                    <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" />
+                                </svg>
+                                <span>Management Software</span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-badge">💻 Desktop</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-tag">Software</span>
+                            <span class="project-tag">Business</span>
+                            <span class="project-tag">Desktop</span>
+                        </div>
+                        <h3 class="project-title">Optician Management Software</h3>
+                        <p class="project-desc">
+                            A complete business management solution for opticians. Handles client records,
+                            prescriptions, inventory management, appointment scheduling, and billing — all in one
+                            streamlined application.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-item">Desktop App</span>
+                            <span class="stack-item">Database</span>
+                            <span class="stack-item">Business Logic</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label mono">// 04. contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Whether you have a project idea, need a developer or security consultant,
+                        or just want to say hi — my inbox is always open.
+                    </p>
+                    <div class="contact-items">
+                        <a class="contact-item" href="mailto:anes.bouchareb@gmail.com" id="email-link">
+                            <div class="ci-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="ci-text">
+                                <span class="ci-label">Email</span>
+                                <span class="ci-value">anes.bouchareb@gmail.com</span>
+                            </div>
+                        </a>
+                        <a class="contact-item" href="https://github.com/" target="_blank" id="github-link">
+                            <div class="ci-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div class="ci-text">
+                                <span class="ci-label">GitHub</span>
+                                <span class="ci-value">www.linkedin.com/in/anas-bouchareb-638509214</span>
+                            </div>
+                        </a>
+                        <a class="contact-item" href="https://www.linkedin.com/in/anas-bouchareb-638509214/"
+                            target="_blank" id="linkedin-link">
+                            <div class="ci-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </div>
+                            <div class="ci-text">
+                                <span class="ci-label">LinkedIn</span>
+                                <span class="ci-value">www.linkedin.com/in/anas-bouchareb-638509214</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="cf-name">Name</label>
+                        <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-email">Email</label>
+                        <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-subject">Subject</label>
+                        <input type="text" id="cf-subject" name="subject"
+                            placeholder="Project inquiry, collaboration...">
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                        Send Message
+                    </button>
+                    <div class="form-success" id="form-success">
+                        ✅ Message received! I'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">AB</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text mono">
+                    // Designed & Built by Anas Bouchareb © 2025
+                </p>
+                <div class="footer-links">
+                    <a href="#home" id="footer-home">Home</a>
+                    <a href="#projects" id="footer-projects">Projects</a>
+                    <a href="#contact" id="footer-contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
